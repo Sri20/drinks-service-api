@@ -1,4 +1,4 @@
-const getCoffee = (name = 'Latte') => {
+const getCoffee = (name ) => {
     return {
         drinkType: 'Coffee',
         name,
