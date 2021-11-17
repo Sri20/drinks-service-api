@@ -10,10 +10,13 @@ describe("Test home API endpoint request", () => {
 });
 
 describe("Test home API endpoint request", () => {
-    test("GET should return correct message", async () => {
-        const res = await request(app).get("/coffeelover");
+    test("GET /coffee should return correct object", async () => {
+        const res = await request(app)
+        .get("/coffee")
+        .query({cofeeName:'Latte'});
         expect(res.statusCode).toEqual(200);
-        expect(res.text).toEqual("I like coffee!");
+        expect(res.body).toEqual({drinkType: 'Coffee',name: 'Latte',});
     });
 });
+
 
