@@ -1,7 +1,7 @@
-const getCoffee = (name ) => {
+const getCoffee = (coffeename ) => {
     return {
-        drinkType: 'Coffee',
-        name,
+        drinkType: 'Coffee' ,
+        name    : coffeename
 };
 };
 module.exports = {

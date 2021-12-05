@@ -1,8 +1,8 @@
 const coffeeService = require('../services/coffee_service');
 
 const getCoffee = async (req, res) => {
-    const coffeeName = req.query.coffeeName;
-    const coffee = coffeeService.getCoffee(coffeeName);
+    const coffeename = req.query.coffeeName
+    const coffee = coffeeService.getCoffee(coffeename);
     res.json(coffee).status(200);
     };
 
